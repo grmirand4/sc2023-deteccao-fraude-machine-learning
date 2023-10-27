@@ -46,9 +46,16 @@ Sobre o desempenho de cada modelo:
   * A **baixa precisão** dos modelos sugere que ainda há espaço para melhorar a capacidade de se evitar falsos positivos.
     
 * **Decision Tree:** foi possível criar um modelo com cerca de 92% de precisão e 72% de recall, totalizando um `f1-score` de cerca de 0.81 com uma curva ROC de 0.96 de área.
-  
+
+* **Random Forest:** com a otimização dos hiperparâmetros, o modelo atingiu uma acurácia de 0.99.
+	* Sobre a classificação: baixa precisão para a classe 1, onde apenas 30% dos dados classificados como fraude realmente a são.
+	* Recall com bom desempenho, onde o modelo é capaz de identificar 85% dos verdadeiros positivos.
+	* F1-Score: média entre precision e recall de 0.45.
+
 * O modelo **Gradient Boosting Otimizado** apresenta uma maior quantidade de acertos na classe de verdadeiros positivos (`recall = 0.84`).
 	* No entanto, pode ser útil investigar maneiras de melhorar a precisão (`precision = 0.45`) sem sacrificar muito o recall, para reduzir o número de transações legítimas classificadas erroneamente como fraudulentas.
+
+ * Concluímos que, dentro dos modelos trabalhados aqui, o **Decision Tree apresentou o melhor desempenho para o nosso conjunto de dados**.
 
 ## 💻 Principais linguagens
 - Python
