@@ -36,9 +36,24 @@ Os data sets `fraudTrain.csv` e `fraudTest.csv` utilizados em nossa análise apr
 * `trans_num`, `unix_time`: dados da transação
 * `is_fraud`: 1 para transações fraudulentas, 0 caso contrário
 
+## 💻 Principais linguagens
+- Python
+  - Pandas
+  - Numpy
+  - Seaborn
+  - Plotly
+  - Matplotlib
+  - Scipy
+  - Sklearn
+  - Imblearn
+  - Lightgbm
+
 ## 👨‍💻 Execução
 Para executar os notebooks localmente, certifique-se de:
+
 * Fazer o download dos arquivos `fraudTrain.csv` e `fraudTest.csv` [neste link do Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection) (eles são muito grandes para serem colocados neste repositório).
 * Alterar o caminho nas linhas de código que lêem os data sets: `df_train = pd.read_csv("caminho/fraudTrain.csv")` e `df_test = pd.read_csv("caminho/fraudTest.csv")`.
+
+Neste repositório, você encontra 4 notebooks diferentes, cada um focado em um dos modelos (KNN, Decision Tree, Random Forest e Gradient Boosting).
 
 ###### Tags: `python` `data-science` `random-forest` `credit-card` `knn` `decision-tree` `fraud-detection` `gradient-boosting`
