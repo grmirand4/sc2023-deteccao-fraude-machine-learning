@@ -11,11 +11,11 @@ Prever transações fraudulentas em cartões de crédito através da construçã
 
 ## 📝 Objetivos específicos
 No desenvolvimento de nossa análise, buscamos responder às seguintes perguntas:
-* É possível prever quais das transações realizadas entre 06/2020 e 12/2020 contidas em `fraudTest.parquet` são fraudulentas?
+* É possível prever quais das transações realizadas entre 06/2020 e 12/2020 contidas em `fraudTest.csv` são fraudulentas?
 * Quais dos modelos classificatórios construídos apresentaram melhor performance?
 
 ## 📊 Sobre o data set
-Os data sets `fraudTrain.parquet` e `fraudTest.parquet` utilizados em nossa análise apresentam informações fictícias retiradas [dessa base de dados do Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection). É um data set simulado de transações de cartões de crédito ocorridas entre as datas de 01/01/2019 a 31/12/2020; refere-se aos cartões de 1000 clientes diferentes realizando transações a 800 comerciantes distintos. As colunas dos arquivos incluem:
+Os data sets `fraudTrain.csv` e `fraudTest.csv` utilizados em nossa análise apresentam informações fictícias retiradas [dessa base de dados do Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection). É um data set simulado de transações de cartões de crédito ocorridas entre as datas de 01/01/2019 a 31/12/2020; refere-se aos cartões de 1000 clientes diferentes realizando transações a 800 comerciantes distintos. As colunas dos arquivos incluem:
 * `trans_date_trans_time`: data e hora da transação
 * `cc_num`: número do cartão de crédito
 * `merchant`: nome do comerciante
@@ -35,3 +35,9 @@ Os data sets `fraudTrain.parquet` e `fraudTest.parquet` utilizados em nossa aná
 * `merch_long`: longitude do comerciante
 * `trans_num`, `unix_time`: dados da transação
 * `is_fraud`: 1 para transações fraudulentas, 0 caso contrário
+
+## 👨‍💻 Execução
+Para executar os notebooks localmente, certifique-se de:
+* Fazer o download dos arquivos `fraudTrain.csv` e `fraudTest.csv` [neste link do Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection) (eles são muito grandes para serem colocados neste repositório).
+* Alterar o caminho nas linhas de código que lêem os data sets: `df_train = pd.read_csv("caminho/fraudTrain.csv")` e `df_test = pd.read_csv("caminho/fraudTest.csv")`
+
