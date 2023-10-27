@@ -61,6 +61,7 @@ Sobre o desempenho de cada modelo:
   - Sklearn
   - Imblearn
   - Lightgbm
+  - Joblib
 
 ## 👨‍💻 Execução
 Para executar os notebooks localmente, certifique-se de:
