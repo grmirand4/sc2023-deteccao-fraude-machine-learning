@@ -44,7 +44,9 @@ Sobre o desempenho de cada modelo:
 * É possível que o **KNN** não seja o melhor modelo para este problema (ou que os modelos trabalhados precisem de mais ajustes).
   * O **recall baixo** (`recall = 0.3` e `recall = 0.25`) representa uma preocupação. Em contextos como detecção de fraudes, devemos priorizar um recall mais alto, mesmo que isso signifique sacrificar um pouco a precisão. Falsos negativos (fraudes não detectadas) podem ter consequências mais graves do que falsos positivos.
   * A **baixa precisão** dos modelos sugere que ainda há espaço para melhorar a capacidade de se evitar falsos positivos.
- 
+    
+* **Decision Tree:** foi possível criar um modelo com cerca de 92% de precisão e 72% de recall, totalizando um `f1-score` de cerca de 0.81 com uma curva ROC de 0.96 de área.
+  
 * O modelo **Gradient Boosting Otimizado** apresenta uma maior quantidade de acertos na classe de verdadeiros positivos (`recall = 0.84`).
 	* No entanto, pode ser útil investigar maneiras de melhorar a precisão (`precision = 0.45`) sem sacrificar muito o recall, para reduzir o número de transações legítimas classificadas erroneamente como fraudulentas.
 
