@@ -41,3 +41,4 @@ Para executar os notebooks localmente, certifique-se de:
 * Fazer o download dos arquivos `fraudTrain.csv` e `fraudTest.csv` [neste link do Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection) (eles são muito grandes para serem colocados neste repositório).
 * Alterar o caminho nas linhas de código que lêem os data sets: `df_train = pd.read_csv("caminho/fraudTrain.csv")` e `df_test = pd.read_csv("caminho/fraudTest.csv")`.
 
+###### Tags: `python` `data-science` `random-forest` `credit-card` `knn` `decision-tree` `fraud-detection` `gradient-boosting`
