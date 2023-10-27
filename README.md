@@ -39,7 +39,7 @@ Os data sets `fraudTrain.csv` e `fraudTest.csv` utilizados em nossa análise apr
 ## 💡 Principais conclusões
 * De forma geral, fomos capazes de utilizar os diferentes modelos de classificação propostos (KNN, Decision Tree, Random Forest e Gradient Boosting) para a predição de fraudes dados os data sets trabalhados.
   
-Sobre o desempenho de cada modelo:
+**Sobre o desempenho de cada modelo:**
 
 * É possível que o **KNN** não seja o melhor modelo para este problema (ou que os modelos trabalhados precisem de mais ajustes).
   * O **recall baixo** (`recall = 0.3` e `recall = 0.25`) representa uma preocupação. Em contextos como detecção de fraudes, devemos priorizar um recall mais alto, mesmo que isso signifique sacrificar um pouco a precisão. Falsos negativos (fraudes não detectadas) podem ter consequências mais graves do que falsos positivos.
@@ -56,6 +56,11 @@ Sobre o desempenho de cada modelo:
 	* No entanto, pode ser útil investigar maneiras de melhorar a precisão (`precision = 0.45`) sem sacrificar muito o recall, para reduzir o número de transações legítimas classificadas erroneamente como fraudulentas.
 
  * Concluímos que, dentro dos modelos trabalhados aqui, o **Decision Tree apresentou o melhor desempenho para o nosso conjunto de dados**.
+
+**Pontos a serem melhorados:**
+
+* Utilizar as mesmas features para os diferentes modelos de forma a gerar comparações mais fidedignas.
+* Adicionar outras métricas de comparação, como a própria curva ROC.
 
 ## 💻 Principais linguagens
 - Python
