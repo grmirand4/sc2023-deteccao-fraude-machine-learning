@@ -59,6 +59,7 @@ Os data sets `fraudTrain.csv` e `fraudTest.csv` utilizados em nossa análise apr
 
 **Pontos a serem melhorados:**
 
+* Para classificação dos dados: utilizar técnicas para lidar com a falta de balanceamento dos data sets (resampling, por exemplo).
 * Utilizar as mesmas features para os diferentes modelos de forma a gerar comparações mais fidedignas.
 * Adicionar outras métricas de comparação, como a própria curva ROC.
 
